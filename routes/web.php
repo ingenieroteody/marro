@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/teody', function() {
+    return "Hello";
+});
+
+
+Route::get('/orders', 'OrdersController@index');
